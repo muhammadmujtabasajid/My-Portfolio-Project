@@ -2,19 +2,16 @@
 
 This is my portfolio webpage built with HTML, CSS, Bootstrap.
 Still learning advanced CSS properties and responsive design.
-
 ## Features
-- Hero section with animated heading
-- About Me section
-- Skills section with GIF animation
-- Contact button
-- Responsive layout for desktop and tablet
-
+1.Hero section with animated heading
+2.About Me section
+3.Skills section with GIF animation
+4.Contact button
+5.Responsive layout for desktop and tablet
 ## Technologies Used
-- HTML
-- CSS
-- Bootstrap
-
+1.HTML
+2.CSS
+3.Bootstrap
 ## Feedback
 Feedback and suggestions are welcome! 
 
