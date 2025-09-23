@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website Of Portfolio</title>
@@ -18,7 +19,17 @@
     <style>
       h1 {
         font-size: 500px;
+       
+        
       }
+      h2, h3 ,h5{
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+}
+p, li {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 400;
+}
       @-webkit-keyframes tracking-in-expand {
         0% {
           letter-spacing: -0.5em;
@@ -115,15 +126,18 @@
         text-align: center;
         border-radius: 20px;
       }
-      .button button {
-        background-color: #1c6ea4; 
+     
+      button{
+    
+          background-color: #1c6ea4; 
         color: #fff9af; 
         padding: 12px 25px; 
         border: none; 
-        border-radius: 20px; 
+        border-radius: 30px; 
         font-size: 18px;
         cursor: pointer; 
         transition: 0.3s; 
+        
       }
       footer {
         background-color: #154d71;
@@ -132,6 +146,20 @@
         background-color: #1c6ea4; 
         transform: scale(1.05); 
       }
+      .buttons{
+        border-radius: 20px;
+        justify-items: ends;
+      }
+      
+      .project-link {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 18px;
+  color: #fff9af; 
+  text-decoration: none; 
+  transition: 0.3s;
+}
+
+   
     </style>
   </head>
   <body>
@@ -193,13 +221,13 @@
       </div>
     </section>
     <section class="section3 py-5" id="skills">
-      <div class="container section3-box">
+      <div class="container section3-box ">
         <h2 class="text-center mb-4"><b>Skills</b></h2>
         <div
           class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4"
         >
           <!-- GIF Column -->
-          <div class="text-center">
+          <div class=" skills text-center">
             <img
               src="https://raw.githubusercontent.com/muhammadmujtabasajid/Photos/main/gif.gif"
               alt="My GIF"
@@ -210,24 +238,71 @@
 
           <!-- Skills Text Column -->
           <div>
-            <p
-              style="
-                font-size: 20px;
-                line-height: 1.6;
-                text-align: justify;
-                max-width: 400px;
-              "
-            >
-              - HTML, CSS, JavaScript<br />
-              - C++ Software Development<br />
-              - Problem Solving & Learning Daily
-            </p>
+           <ul style="text-align: left;
+           font-size: 20px;
+           line-height: 1.6;
+           ">
+  <li>HTML, CSS, JavaScript</li>
+  <li>C++ Software Development</li>
+  <li>Problem Solving & Learning Daily</li>
+</ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="button">
+<section class="section3 py-5" id="projects">
+  <div class="container section3-box">
+    <h2 class="text-center mb-4"><b>My Projects</b></h2>
+    <div class="row justify-content-center g-4">
+      
+      <!-- Project Card 1 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card text-center h-100" style="border-radius: 30px;">
+          <img src="https://cdn.dribbble.com/userupload/28117148/file/original-c0db2041822a946b9529b5ae1fdf08e8.gif"
+               class="card-img-top" alt="Project 1" style="border-top-left-radius:110px; border-top-right-radius:100px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">My Portfolio</h5>
+            <p class="card-text">A personal portfolio website showcasing my skills using HTML , CSS & Bootstrap .</p>
+            <a href="https://github.com/muhammadmujtabasajid/My-Portfolio-Project/tree/main" class="buttons btn btn-warning" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card text-center h-100" style="border-radius: 30px;">
+          <img src="https://cdn.dribbble.com/userupload/21976650/file/original-0b3faffacfd2c7b9c5c47665ae174fab.gif"
+               class="card-img-top" alt="Project 2" style="border-top-left-radius:100px; border-top-right-radius:110px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">ToolShop Manager</h5>
+            <p class="card-text">A simple C++ project demonstrating OOP concepts. The program simulates a hardware store where a shopkeeper manages tools and machines, including hammers, drills, and more.</p>
+            <a href="#" class="buttons btn btn-warning">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card text-center h-100" style="border-radius: 30px;">
+          <img src="https://cdn.dribbble.com/userupload/21820852/file/original-c9846971f56609556ce28c7e0d9aa841.gif"
+               class="card-img-top" alt="Project 3" style="border-top-left-radius:100px; border-top-right-radius:110px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Calculator</h5>
+            <p class="card-text">A basic web calculator built with HTML, CSS, and JavaScript to perform simple arithmetic operations.
+</p>
+            <a href="#" class="buttons btn btn-warning">View Project</a>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+</section>
+<section class="button">
       <button>Contact Me</button>
     </section>
     <footer class="text-light py-4 mt-5">
@@ -246,5 +321,3 @@
     ></script>
   </body>
 </html>
-
-
