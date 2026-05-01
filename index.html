@@ -229,7 +229,6 @@
       html[data-theme="dark"] #projects h2,
       html[data-theme="dark"] #contact h2 { color: var(--text-dark); }
 
-
       /* --- EXTREME SKILLS SECTION STYLES --- */
       
       /* The Card: Mesh Gradient Background */
@@ -367,7 +366,6 @@
         color: var(--dark-blue);
         box-shadow: 0 10px 25px rgba(255, 249, 175, 0.3);
       }
-
 
       /* -- PROJECTS -- */
       .card {
@@ -544,8 +542,8 @@
             
             <div class="col-lg-7">
               <div class="skills-wrapper" id="skills-cloud">
-                <span class="skill-tag">HTML </span>
-                <span class="skill-tag">CSS </span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
                 <span class="skill-tag">JavaScript (Learning)</span>
                 <span class="skill-tag">Bootstrap</span>
                 <span class="skill-tag">C++ Development</span>
@@ -560,7 +558,7 @@
       </div>
     </section>
 
-<section id="projects" class="content-section">
+    <section id="projects" class="content-section">
       <div class="container">
         <h2 class="text-center mb-5" data-aos="fade-up"><b>My Projects</b></h2>
         <div class="row justify-content-center g-4">
@@ -587,12 +585,13 @@
             </div>
           </div>
           
-   <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="card text-center">
               <img src="https://github.com/muhammadmujtabasajid/Photos/blob/main/Audio%20Only%20Header.gif?raw=true" 
                    class="card-img-top" 
                    alt="Budget-Zero AI Transcriber" 
-                 />
+                   loading="lazy" 
+                   decoding="async" />
               <div class="card-body p-4">
                 <h5 class="card-title">Budget-Zero AI Transcriber</h5>
                 <p class="card-text">A local Faster-Whisper AI engine optimized with INT8 quantization and thread management to transcribe bilingual audio on low-end hardware.</p>
@@ -628,7 +627,7 @@
 
     <footer class="text-light py-4">
       <div class="container text-center">
-          <p class="mb-2">© 2025 Muhammad Mujtaba Sajid. All rights reserved.This portfolio and its source code are for personal showcase only.
+          <p class="mb-2">© 2025 Muhammad Mujtaba Sajid. All rights reserved. This portfolio and its source code are for personal showcase only.
               Unauthorized copying or redistribution is not permitted.</p>
               <a href="#home" class="me-3">Home</a>
               <a href="#about" class="me-3">About</a>
@@ -736,12 +735,14 @@
           skill.classList.add('pop-in');
         });
       });
+      
       // Fallback for simple scroll if AOS custom event is tricky
       window.addEventListener('scroll', function() {
         const skillSection = document.getElementById('skills');
         const rect = skillSection.getBoundingClientRect();
         if(rect.top < window.innerHeight - 100) {
            const skills = document.querySelectorAll('.skill-tag');
+           // Fixed typo here: changed 'forEachskill =>' to 'forEach(skill =>'
            skills.forEach(skill => skill.classList.add('pop-in'));
         }
       });
